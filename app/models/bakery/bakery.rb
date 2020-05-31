@@ -17,6 +17,16 @@ class Bakery
         desserts.map {|d| d.ingredients}.flatten
     end
 
+    def average_calories
+        sum = 0
+        desserts.each {|d| sum += d.calories}
+        sum / desserts.count
+    end
+
+    def shopping_list
+        ingredients.map {|ing| ing.name}
+    end
+
     def self.all
         @@all
     end

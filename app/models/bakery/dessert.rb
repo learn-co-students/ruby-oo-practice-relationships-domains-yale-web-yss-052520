@@ -16,6 +16,10 @@ class Dessert
         Ingredient.all.select {|ing| ing.dessert == self}
     end
 
+    def calories
+        ingredients.sum {|ing| ing.calorie_count}
+    end
+
     def self.all
         @@all
     end

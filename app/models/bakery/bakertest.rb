@@ -12,5 +12,5 @@ sprinkles = Ingredient.new(cupcake, 100, "sprinkles")
 choc_chips = Ingredient.new(cookie, 25, "chocolate chips")
 vanilla = Ingredient.new(cookie, 35, "vanilla")
 
-binding.pry
+# binding.pry
 0

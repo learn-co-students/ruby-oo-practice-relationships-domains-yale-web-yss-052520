@@ -16,5 +16,5 @@ trip1 = Trip.new(listing1, guest1)
 trip2 = Trip.new(listing2, guest2)
 trip3 = Trip.new(listing1, guest2)
 
-binding.pry
+# binding.pry
 0

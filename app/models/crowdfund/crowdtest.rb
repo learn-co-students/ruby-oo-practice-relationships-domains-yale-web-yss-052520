@@ -19,5 +19,5 @@ pl_3 = Pledge.new(david, pr_2, 35)
 pl_4 = Pledge.new(david, pr_2, 5550)
 pl_5 = Pledge.new(nicole, pr_2, 300)
 
-binding.pry
+# binding.pry
 0

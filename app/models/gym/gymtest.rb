@@ -12,5 +12,5 @@ amy = Client.new("Amy")
 
 amy.assign_trainer(buzz, downtown)
 
-binding.pry
+# binding.pry
 0

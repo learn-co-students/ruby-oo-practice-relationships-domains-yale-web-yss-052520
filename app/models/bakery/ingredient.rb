@@ -17,4 +17,8 @@ class Ingredient
     def self.all
         @@all
     end
+
+    def self.find_all_by_name(ing_name)
+        self.all.select {|ing| ing.name.include? ing_name} 
+    end
 end

@@ -17,6 +17,7 @@ first_pledge = Pledge.new(darcy, first_project, 50)
 pl_2 = Pledge.new(darcy, first_project, 500)
 pl_3 = Pledge.new(david, pr_2, 35)
 pl_4 = Pledge.new(david, pr_2, 5550)
+pl_5 = Pledge.new(nicole, pr_2, 300)
 
 binding.pry
 0

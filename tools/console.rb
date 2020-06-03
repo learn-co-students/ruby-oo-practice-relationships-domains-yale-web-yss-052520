@@ -121,6 +121,44 @@ r9 = Role.new(c6, s7)
 r10 = Role.new(c6, s6)
 r11 = Role.new(c4, s4)
 
+# Tests for Crowdfunding
+u1 = User.new("Bob")
+u2 = User.new("Bill")
+u3 = User.new("Brian")
+u4 = User.new("Briana")
+u5 = User.new("Bailey")
+u6 = User.new("Babe")
+u7 = User.new("Barack")
+u8 = User.new("Billy")
+u9 = User.new("Bobby")
+
+pr1 = Project.new(u1, "Airbnb", 2000000)
+pr2 = Project.new(u2, "Facebook", 205650000)
+pr3 = Project.new(u3, "Twitter", 153298)
+pr4 = Project.new(u4, "KikiAir", 1234)
+pr5 = Project.new(u5, "Apple", 1346457345134)
+pr6 = Project.new(u6, "Microsoft", 356666666)
+pr7 = Project.new(u7, "Allbirds", 3241)
+pr8 = Project.new(u1, "Everlane", 63463452)
+pr9 = Project.new(u3, "Patagonia", 345636)
+pr10 = Project.new(u6, "Earth Fund", 2000333000)
+
+pl1 = Pledge.new(u2, 350239, pr1)
+pl2 = Pledge.new(u2, 3, pr1)
+pl3 = Pledge.new(u2, 423431, pr3)
+pl4 = Pledge.new(u3, 2, pr2)
+pl5 = Pledge.new(u1, 3503124239, pr3)
+pl6 = Pledge.new(u1, 52315, pr4)
+pl7 = Pledge.new(u4, 3324, pr5)
+pl8 = Pledge.new(u5, 23, pr6)
+pl9 = Pledge.new(u7, 123, pr7)
+pl10 = Pledge.new(u9, 1253, pr8)
+pl11 = Pledge.new(u9, 234, pr9)
+pl12 = Pledge.new(u6, 12, pr10)
+pl13 = Pledge.new(u5, 1243251346134, pr2)
+pl14 = Pledge.new(u1, 12412412, pr2)
+
+
 
 
 

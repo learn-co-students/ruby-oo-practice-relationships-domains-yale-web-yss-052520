@@ -59,10 +59,25 @@ class Character
     def self.all
         @@all
     end
+
+    def self.total_appearances
+        # helped method created to assist the following method
+        total = 0
+        counter = 0 
+        self.all.each {|character|
+            if character.movie && character.show
+                total += 2
+            else 
+                total +=1 
+            end
+            counter += 1
+        }.count
+    end
     
     def self.most_appearances
         # count up appearances and return max
         # really hard!!
+
     
     end
 end

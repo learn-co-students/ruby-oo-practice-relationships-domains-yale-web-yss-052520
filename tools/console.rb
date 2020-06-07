@@ -159,6 +159,63 @@ pl13 = Pledge.new(u5, 1243251346134, pr2)
 pl14 = Pledge.new(u1, 12412412, pr2)
 
 
+# Tests for OO Domain Relationships Gym 
+trainer1 = Trainer.new("Mark")
+trainer2 = Trainer.new("Abby")
+trainer3 = Trainer.new("Drew")
+trainer4 = Trainer.new("Sarah")
+trainer5 = Trainer.new("Jeff")
+trainer6 = Trainer.new("Terrance")
+trainer7 = Trainer.new("Robby")
+
+client1 = Client.new("a")
+client1.assign_trainer(trainer1)
+client2 = Client.new("b")
+client2.assign_trainer(trainer2)
+client3 = Client.new("c")
+client3.assign_trainer(trainer3)
+client4 = Client.new("d")
+client4.assign_trainer(trainer4)
+client5 = Client.new("e")
+client5.assign_trainer(trainer5)
+client6 = Client.new("f")
+client6.assign_trainer(trainer4)
+client7 = Client.new("g")
+client7.assign_trainer(trainer4)
+client8 = Client.new("h")
+client8.assign_trainer(trainer6)
+client9 = Client.new("i")
+client9.assign_trainer(trainer7)
+client10 = Client.new("j")
+client10.assign_trainer(trainer1)
+
+location1 = Location.new("NJ")
+location2 = Location.new("CT")
+location3 = Location.new("NY")
+location4 = Location.new("RI")
+location5 = Location.new("MA")
+location6 = Location.new("SC")
+
+session1 = Session.new(location1, client1)
+session2 = Session.new(location2, client1)
+session3 = Session.new(location3, client3)
+session4 = Session.new(location4, client2)
+session5 = Session.new(location5, client4)
+session6 = Session.new(location6, client5)
+session7 = Session.new(location5, client6)
+session8 = Session.new(location6, client10)
+session9 = Session.new(location1, client6)
+session10 = Session.new(location2, client4)
+session11 = Session.new(location2, client3)
+session12 = Session.new(location2, client2)
+session13 = Session.new(location2, client7)
+session14 = Session.new(location2, client8)
+session15 = Session.new(location2, client9)
+session16 = Session.new(location2, client4)
+session17 = Session.new(location1, client3)
+
+
+
 
 
 
